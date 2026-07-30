@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoolLab 2.0 Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.6 9H20.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.6 15H20.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.5 3C11.5 3 8.5 6 8.5 12C8.5 18 11.5 21 11.5 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.5 3C12.5 3 15.5 6 15.5 12C15.5 18 12.5 21 12.5 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="title-container">
+                    <h1 id="main-title">Yükleniyor...</h1>
+                    <span class="pool-info" id="pool-info"></span>
+                </div>
+            </div>
+        </header>
+
+        <main class="metrics-grid" id="metrics-grid">
+            <!-- Metrics will be inserted here by JS -->
+            <div class="loading-state">
+                <div class="spinner"></div>
+                <p>Havuz değerleri LabCom Cloud'dan alınıyor...</p>
+            </div>
+        </main>
+        
+        <div class="last-updated" id="last-updated">
+        </div>
+    </div>
+    
+    <script src="/app.js"></script>
+</body>
+</html>
